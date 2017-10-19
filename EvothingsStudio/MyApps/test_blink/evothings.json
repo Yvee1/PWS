@@ -1,0 +1,23 @@
+{
+  "name": "test_blink",
+  "version": "1.0.0",
+  "title": "Blink ESP8266 led",
+  "description": "Turn the led on the ESP8266 on and off with phone.",
+  "tags": [],
+  "libraries": [
+    {
+      "name": "jquery",
+      "version": "2.1.1"
+    }
+  ],
+  "plugins": [],
+  "index-file": "index.html",
+  "uuid": "6627ecf6-28bd-4c47-84c5-c89da2820879",
+  "icon": "app-icon.png",
+  "doc-url": "http://evothings.com/2.2/doc/examples/template-basic-app.html",
+  "long-description": "Turn the led on the ESP8266 on and off with phone.",
+  "cordova-id": "com.evothings.examples.templatebasicapp",
+  "author-name": "Evothings",
+  "author-email": "build@evothings.com",
+  "author-url": "https://evothings.com"
+}
