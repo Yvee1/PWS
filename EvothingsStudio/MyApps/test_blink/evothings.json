@@ -12,7 +12,7 @@
   ],
   "plugins": [],
   "index-file": "index.html",
-  "uuid": "6627ecf6-28bd-4c47-84c5-c89da2820879",
+  "uuid": "15e2f1a9-0330-49f6-b6bd-acedf890f920",
   "icon": "app-icon.png",
   "doc-url": "http://evothings.com/2.2/doc/examples/template-basic-app.html",
   "long-description": "Turn the led on the ESP8266 on and off with phone.",
