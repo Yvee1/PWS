@@ -16,7 +16,9 @@
 
 	<script>
 		// Redirect console.log to Evothings Workbench.
-		if (window.hyper && window.hyper.log) { console.log = hyper.log }
+		if (window.hyper && window.hyper.log) {
+			console.log = hyper.log
+		}
 	</script>
 
 	<script src="cordova.js"></script>
@@ -51,7 +53,7 @@
 
 		<h2>Enter IP-address of the ESP8266</h2>
 
-		<input id="IPAddress" value="192.168.11.37" type="url">
+		<input id="IPAddress" value="192.168.11.17" type="url">
 
 		<button id="connectButton" class="green wide"> Connect </button>
 
@@ -89,8 +91,7 @@
 		<p>Change the speed of the motor via the slider</p>
 
 		<div id="slidecontainer">
-  			<input type="range" min="0" max="9" value="0" class="slider"
-			onchange="app.changeSlider(this.value)"  oninput="app.changeSlider(this.value)"id="myRange">
+			<input type="range" min="0" max="9" value="0" class="slider" oninput="app.changeSlider(this.value)" id="myRange">
 		</div>
 
 		<button id="disconnectButton" class="red wide"> Disconnect </button>
@@ -98,4 +99,5 @@
 	</div>
 
 </body>
+
 </html>
