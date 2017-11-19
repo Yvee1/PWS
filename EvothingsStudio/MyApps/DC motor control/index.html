@@ -45,17 +45,17 @@
 
 	</header>
 
-	<h1>DC motor control</h1>
+	<h1>Besturing van DC motors.</h1>
 
 	<div id="startView">
 
 		<img class="center" style="width:70%;padding: 25px 0px" src="img/esp8266.jpg">
 
-		<h2>Enter IP-address of the ESP8266</h2>
+		<h2>Voer IP-adres in van de ESP8266</h2>
 
 		<input id="IPAddress" value="192.168.11.17" type="url">
 
-		<button id="connectButton" class="green wide"> Connect </button>
+		<button id="connectButton" class="green wide"> Verbind </button>
 
 	</div>
 
@@ -72,7 +72,7 @@
 
 	<div id="controlView" style="display:none">
 
-		<p>Turn on and off the motor by clicking the circle.</p>
+		<p>Zet de motors aan en uit.</p>
 
 		<div id="ledView">
 			<div style="display:inline-block">
@@ -80,7 +80,7 @@
 			</div>
 		</div>
 
-		<p>Reverse the first motor by clicking the circle.</p>
+		<p>Bestuur de draairichting van de eerste motor.</p>
 
 		<div id="reverseView">
 			<div style="display:inline-block">
@@ -88,7 +88,7 @@
 			</div>
 		</div>
 
-		<p>Reverse the second motor by clicking the circle.</p>
+		<p>Bestuur de draairichting van de tweede motor.</p>
 
 		<div id="reverseView">
 			<div style="display:inline-block">
@@ -96,13 +96,13 @@
 			</div>
 		</div>
 
-		<p>Change the speed of the motor via the slider</p>
+		<p>Verander de snelheid van de motors.</p>
 
 		<div id="slidecontainer">
 			<input type="range" min="0" max="9" value="0" class="slider" oninput="app.changeSlider(this.value)" id="myRange">
 		</div>
 
-		<button id="disconnectButton" class="red wide"> Disconnect </button>
+		<button id="disconnectButton" class="red wide"> Verbreek de verbinding </button>
 
 	</div>
 
