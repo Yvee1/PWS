@@ -27,8 +27,12 @@ $(document).ready(function() {
 		app.ledOn()
 	})
 
-	$('#reverse').click(function(){
-		app.reverseOn()
+	$('#reverse1').click(function(){
+		app.reverse1On()
+	})
+
+	$('#reverse2').click(function(){
+		app.reverse2On()
 	})
 
 	$('myRange')
@@ -126,28 +130,47 @@ app.ledOff = function() {
 	})
 }
 
-app.reverseOn = function() {
+app.reverse1On = function() {
 
 	app.sendString('Y')
-	//fill(255, 0, 0);
-	//ellipse(200, 200, 200, 200);
-	$('#reverse').removeClass('ledOff').addClass('ledOn')
-	//p5.fill(255, 255, 255);
-	//p5.ellipse(50, 50, 10, 10);
 
-	$('#reverse').unbind('click').click(function(){
-		app.reverseOff()
+	$('#reverse1').removeClass('ledOff').addClass('ledOn')
+
+	$('#reverse1').unbind('click').click(function(){
+		app.reverse1Off()
 	})
 }
 
-app.reverseOff = function() {
+app.reverse1Off = function() {
 
 	app.sendString('N')
 
-	$('#reverse').removeClass('ledOn').addClass('ledOff')
+	$('#reverse1').removeClass('ledOn').addClass('ledOff')
 
-	$('#reverse').unbind('click').click(function(){
-		app.reverseOn()
+	$('#reverse1').unbind('click').click(function(){
+		app.reverse1On()
+	})
+}
+
+app.reverse2On = function() {
+
+	app.sendString('I')
+
+	$('#reverse2').removeClass('ledOff').addClass('ledOn')
+
+	$('#reverse2').unbind('click').click(function(){
+		app.reverse2Off()
+	})
+}
+
+app.reverse2Off = function() {
+
+	app.sendString('O')
+
+	$('#reverse2').removeClass('ledOn').addClass('ledOff')
+
+	$('#reverse2').unbind('click').click(function(){
+		app.reverse2On()
 	})
 }
 
