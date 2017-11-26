@@ -1,12 +1,12 @@
 #include <SoftwareSerial.h>
 
-int enablePin1 = 11;
-int in1Pin1 = 10;
-int in2Pin1 = 9;
+int enablePin1 = 6;
+int in1Pin1 = 9;
+int in2Pin1 = 8;
 
-int enablePin2 = 3;
-int in4Pin2 = 6;
-int in3Pin2 = 5;
+int enablePin2 = 5;
+int in4Pin2 = 4;
+int in3Pin2 = 7;
 
 int speed = 80;
 boolean on = false;
