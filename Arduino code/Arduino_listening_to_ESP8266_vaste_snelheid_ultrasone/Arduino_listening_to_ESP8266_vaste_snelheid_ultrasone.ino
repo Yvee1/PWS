@@ -1,5 +1,6 @@
-#include <SoftwareSerial.h>
 #include <NewPing.h>
+#include <SoftwareSerial.h>
+
 #define TRIGGER_PIN  12  // Arduino pin tied to trigger pin on the ultrasonic sensor.
 #define ECHO_PIN     11  // Arduino pin tied to echo pin on the ultrasonic sensor.
 #define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters). Maximum sensor distance is rated at 400-500cm.
@@ -7,7 +8,7 @@
 NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE); // NewPing setup of pins and maximum distance.
 
 long previousMillis = 0;
-long interval = 1000;
+long interval = 200;
 
 int enablePin1 = 6;
 int in1Pin1 = 9;
@@ -18,15 +19,18 @@ int in4Pin2 = 4;
 int in3Pin2 = 7;
 
 int speed1 = 255;
-int speed2 = 156;
+int speed2 = 160;
 boolean on = false;
 boolean reverse1 = false;
 boolean reverse2 = false;
+
+int distance = 0;
 
 SoftwareSerial ESPserial(2, 3); // RX | TX
 
 void setup()
 {
+  
   Serial.begin(115200);
   pinMode(in1Pin1, OUTPUT);
   pinMode(in2Pin1, OUTPUT);
@@ -71,10 +75,11 @@ void loop()
   unsigned long currentMillis = millis();
   if(currentMillis - previousMillis > interval) {
     previousMillis = currentMillis;   
-    distance = sonar.ping_cm();
+    distance = sonar.convert_cm(sonar.ping_median(5));
+    Serial.println(distance);
   }
  
-  if (on && distance < 10){
+  if (on && distance > 10){
     setMotor1(speed1, reverse1);
     setMotor2(speed2, reverse2);
   }
@@ -84,7 +89,7 @@ void loop()
   }
 }
 
-void setMotor1(int speed, boolean reverse)
+void setMotor1(int speed1, boolean reverse)
 {
   analogWrite(enablePin1, speed1);
   digitalWrite(in1Pin1, ! reverse);
