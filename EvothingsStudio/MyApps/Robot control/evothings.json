@@ -1,0 +1,23 @@
+{
+  "name": "robot_control",
+  "version": "1.0.0",
+  "title": "Robot control",
+  "description": "Control robot with phone.",
+  "tags": [],
+  "libraries": [
+    {
+      "name": "jquery",
+      "version": "2.1.1"
+    }
+  ],
+  "plugins": [],
+  "index-file": "index.html",
+  "uuid": "c58c7896-ddc4-4e03-9346-20de01e679c4",
+  "icon": "app-icon.png",
+  "doc-url": "http://evothings.com/2.2/doc/examples/template-basic-app.html",
+  "long-description": "Control DC motor with phone.",
+  "cordova-id": "com.evothings.examples.templatebasicapp",
+  "author-name": "Evothings",
+  "author-email": "build@evothings.com",
+  "author-url": "https://evothings.com"
+}

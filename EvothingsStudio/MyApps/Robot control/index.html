@@ -72,41 +72,13 @@
 
 	<div id="controlView" style="display:none">
 
-		<p>Zet de motors aan en uit.</p>
-
-		<div id="ledView">
-			<div style="display:inline-block">
-				<div id="led" class="circleBase ledOff"></div>
-			</div>
-		</div>
-
-		<p>Bestuur de draairichting van de eerste motor.</p>
-
-		<div id="reverseView">
-			<div style="display:inline-block">
-				<div id="reverse1" class="circleBase ledOff"></div>
-			</div>
-		</div>
-
-		<p>Bestuur de draairichting van de tweede motor.</p>
-
-		<div id="reverseView">
-			<div style="display:inline-block">
-				<div id="reverse2" class="circleBase ledOff"></div>
-			</div>
-		</div>
-
-		<p>Verander de snelheid van de motors.</p>
-
-		<div id="slidecontainer">
-			<input type="range" min="0" max="9" value="0" class="slider" oninput="app.changeSlider(this.value)" id="myRange">
-		</div>
+		<div id="arrow-up"></div>
+		<div id="arrow-left"></div>
+		<div id="arrow-right"></div>
+		<div id="arrow-down"></div>
 
 		<button id="disconnectButton" class="red wide"> Verbreek de verbinding </button>
-		<div class="arrow-up"></div>
-		<div class="arrow-down"></div>
-		<div class="arrow-left"></div>
-		<div class="arrow-right"></div>
+
 	</div>
 
 </body>
