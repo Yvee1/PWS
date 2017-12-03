@@ -8,11 +8,11 @@ int enablePin2 = 5;
 int in4Pin2 = 4;
 int in3Pin2 = 7;
 
-int speed1 = 255;
-int speed2 = 255;
+int speedR = 255;
+int speedL = 255;
 boolean on = false;
-boolean reverse1 = false;
-boolean reverse2 = false;
+boolean reverseR = false;
+boolean reverseL = false;
 
 SoftwareSerial ESPserial(2, 3); // RX | TX
 
@@ -43,41 +43,48 @@ void loop()
     Serial.write(inByte);
     Serial.println();
     switch (inByte){
-      case 'L' : on = false;
+      case 'F' : on = true;
+                 reverseR = false;
+                 reverseL = false;
                  break;
-      case 'H' : on = true;
+      case 'R' : on = true;
+                 reverseR = true;
+                 reverseL = false;
                  break;
-      case 'N' : reverse1 = false;
+      case 'L' : on = true;
+                 reverseL = true;
+                 reverseR = false;
                  break;
-      case 'Y' : reverse1 = true;
+      case 'B' : on = true;
+                 reverseR = true;
+                 reverseL = true;
                  break;
-      case 'O' : reverse2 = false;
-                 break;
-      case 'I' : reverse2 = true;
-                 break;
+      case '0' : on = false;
+                 reverseR = false;
+                 reverseL = false;
       default:   break;
     }
   }
 
   if (on){
-    setMotor1(speed1, reverse1);
-    setMotor2(speed2, reverse2);
+    setMotorR(speedR, reverseR);
+    setMotorL(speedL, reverseL);
   }
   else{
-    setMotor1(0, reverse1);
-    setMotor2(0, reverse2);
+    setMotorR(0, reverseR);
+    setMotorL(0, reverseL);
   }
 }
 
-void setMotor1(int speed1, boolean reverse)
+void setMotorR(int speedR, boolean reverse)
 {
-  analogWrite(enablePin1, speed1);
+  analogWrite(enablePin1, speedR);
   digitalWrite(in1Pin1, ! reverse);
   digitalWrite(in2Pin1, reverse);
 }
-void setMotor2(int speed2, boolean reverse2)
+void setMotorL(int speedL, boolean reverseL)
 {
-  analogWrite(enablePin2, speed2);
-  digitalWrite(in3Pin2, ! reverse2);
-  digitalWrite(in4Pin2, reverse2);
+  analogWrite(enablePin2, speedL);
+  digitalWrite(in3Pin2, ! reverseL);
+  digitalWrite(in4Pin2, reverseL);
 }
