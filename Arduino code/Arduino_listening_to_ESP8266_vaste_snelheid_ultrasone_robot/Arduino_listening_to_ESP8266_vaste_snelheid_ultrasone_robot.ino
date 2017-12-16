@@ -83,10 +83,11 @@ void loop()
   if(currentMillis - previousMillis > interval) {
     previousMillis = currentMillis;   
     distance = sonar.convert_cm(sonar.ping_median(5));
+    Serial.print("Distance: ");
     Serial.println(distance);
   }
  
-  if (on && distance > 10){
+  if (on && (distance > 10 || distance == 0)){
     setMotorR(speedR, reverseR);
     setMotorL(speedL, reverseL);
   }
