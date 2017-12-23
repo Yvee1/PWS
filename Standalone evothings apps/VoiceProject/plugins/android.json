@@ -1,0 +1,33 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.evothings.voiceapp"
+        },
+        "cordova-plugin-chrome-apps-common": {
+            "PACKAGE_NAME": "com.evothings.voiceapp"
+        },
+        "cordova-plugin-chrome-apps-sockets-tcp": {
+            "PACKAGE_NAME": "com.evothings.voiceapp"
+        },
+        "cordova-plugin-chrome-apps-sockets-tcpserver": {
+            "PACKAGE_NAME": "com.evothings.voiceapp"
+        },
+        "cordova-plugin-chrome-apps-sockets-udp": {
+            "PACKAGE_NAME": "com.evothings.voiceapp"
+        },
+        "cordova-plugin-chrome-apps-system-network": {
+            "PACKAGE_NAME": "com.evothings.voiceapp"
+        },
+        "cordova-plugin-speechrecognition": {
+            "PACKAGE_NAME": "com.evothings.voiceapp"
+        }
+    },
+    "dependent_plugins": {}
+}

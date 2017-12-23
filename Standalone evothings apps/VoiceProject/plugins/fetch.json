@@ -1,0 +1,58 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-chrome-apps-common": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-chrome-apps-common"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-chrome-apps-sockets-tcp": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-chrome-apps-sockets-tcp"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-chrome-apps-sockets-tcpserver": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-chrome-apps-sockets-tcpserver"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-chrome-apps-sockets-udp": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-chrome-apps-sockets-udp"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-chrome-apps-system-network": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-chrome-apps-system-network"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-speechrecognition": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-speechrecognition"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

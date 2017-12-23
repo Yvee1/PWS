@@ -1,0 +1,92 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'https://github.com/evothings/cordova-HTTP#v0.2.2',
+1 verbose cli   '--production',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData https://github.com/evothings/cordova-HTTP#v0.2.2
+8 silly fetchOtherPackageData https://github.com/evothings/cordova-HTTP#v0.2.2
+9 silly cache add args [ 'https://github.com/evothings/cordova-HTTP#v0.2.2', null ]
+10 verbose cache add spec https://github.com/evothings/cordova-HTTP#v0.2.2
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'https://github.com/evothings/cordova-HTTP#v0.2.2',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'https://github.com/evothings/cordova-HTTP#v0.2.2',
+11 silly cache add   spec: 'git+https://github.com/evothings/cordova-HTTP.git#v0.2.2',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:evothings/cordova-HTTP.git#v0.2.2',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/evothings/cordova-HTTP.git#v0.2.2',
+11 silly cache add      httpsUrl: 'git+https://github.com/evothings/cordova-HTTP.git#v0.2.2',
+11 silly cache add      gitUrl: 'git://github.com/evothings/cordova-HTTP.git#v0.2.2',
+11 silly cache add      shortcut: 'github:evothings/cordova-HTTP#v0.2.2',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/evothings/cordova-HTTP/v0.2.2/package.json' } }
+12 verbose addRemoteGit caching https://github.com/evothings/cordova-HTTP#v0.2.2
+13 verbose addRemoteGit git+https://github.com/evothings/cordova-HTTP.git#v0.2.2 is a repository hosted by github
+14 silly tryClone cloning git+https://github.com/evothings/cordova-HTTP.git#v0.2.2 via git+https://github.com/evothings/cordova-HTTP.git#v0.2.2
+15 verbose tryClone git-https-github-com-evothings-cordova-HTTP-git-v0-2-2-4c4ce5b3 not in flight; caching
+16 verbose correctMkdir C:\Users\Kippen\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+17 info git [ 'config', '--get', 'remote.origin.url' ]
+18 silly validateExistingRemote git+https://github.com/evothings/cordova-HTTP.git#v0.2.2 remote.origin.url: https://github.com/evothings/cordova-HTTP.git
+19 verbose validateExistingRemote git+https://github.com/evothings/cordova-HTTP.git#v0.2.2 is updating existing cached remote C:\Users\Kippen\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-evothings-cordova-HTTP-git-v0-2-2-4c4ce5b3
+20 info git [ 'fetch', '-a', 'origin' ]
+21 verbose updateRemote git fetch -a origin (https://github.com/evothings/cordova-HTTP.git)
+22 verbose setPermissions git+https://github.com/evothings/cordova-HTTP.git#v0.2.2 skipping chownr on Windows
+23 verbose resolveHead git+https://github.com/evothings/cordova-HTTP.git#v0.2.2 original treeish: v0.2.2
+24 info git [ 'rev-list', '-n1', 'v0.2.2' ]
+25 silly resolveHead git+https://github.com/evothings/cordova-HTTP.git#v0.2.2 resolved treeish: e90afd504bdbeba1f8e22647e2c5093b557309fc
+26 verbose resolveHead git+https://github.com/evothings/cordova-HTTP.git#v0.2.2 resolved Git URL: git+https://github.com/evothings/cordova-HTTP.git#e90afd504bdbeba1f8e22647e2c5093b557309fc
+27 silly resolveHead Git working directory: C:\Users\Kippen\AppData\Local\Temp\npm-8188-550579e2\git-cache-5b87df0e\e90afd504bdbeba1f8e22647e2c5093b557309fc
+28 info git [ 'clone',
+28 info git   'C:\\Users\\Kippen\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-github-com-evothings-cordova-HTTP-git-v0-2-2-4c4ce5b3',
+28 info git   'C:\\Users\\Kippen\\AppData\\Local\\Temp\\npm-8188-550579e2\\git-cache-5b87df0e\\e90afd504bdbeba1f8e22647e2c5093b557309fc' ]
+29 verbose cloneResolved git+https://github.com/evothings/cordova-HTTP.git#v0.2.2 clone Cloning into 'C:\Users\Kippen\AppData\Local\Temp\npm-8188-550579e2\git-cache-5b87df0e\e90afd504bdbeba1f8e22647e2c5093b557309fc'...
+29 verbose cloneResolved done.
+30 info git [ 'checkout', 'e90afd504bdbeba1f8e22647e2c5093b557309fc' ]
+31 verbose checkoutTreeish git+https://github.com/evothings/cordova-HTTP.git#v0.2.2 checkout Note: checking out 'e90afd504bdbeba1f8e22647e2c5093b557309fc'.
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+31 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+31 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+31 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish   git checkout -b <new-branch-name>
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish HEAD is now at e90afd5... Fixed build errors and warnings for Cordova 6
+32 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+33 verbose updateSubmodules git+https://github.com/evothings/cordova-HTTP.git#v0.2.2 submodule update
+34 error addLocal Could not install C:\Users\Kippen\AppData\Local\Temp\npm-8188-550579e2\git-cache-5b87df0e\e90afd504bdbeba1f8e22647e2c5093b557309fc
+35 silly fetchPackageMetaData Error: EISDIR: illegal operation on a directory, read
+35 silly fetchPackageMetaData     at Error (native)
+35 silly fetchPackageMetaData  error for https://github.com/evothings/cordova-HTTP#v0.2.2 { Error: EISDIR: illegal operation on a directory, read
+35 silly fetchPackageMetaData     at Error (native) errno: -4068, code: 'EISDIR', syscall: 'read' }
+36 silly rollbackFailedOptional Starting
+37 silly rollbackFailedOptional Finishing
+38 silly runTopLevelLifecycles Finishing
+39 silly install printInstalled
+40 verbose stack Error: EISDIR: illegal operation on a directory, read
+40 verbose stack     at Error (native)
+41 verbose cwd C:\Users\Kippen\Desktop\Coderen\GitHub\PWS\Custom evothings viewer\evothings-viewer-1.5.0
+42 error Windows_NT 10.0.16299
+43 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "https://github.com/evothings/cordova-HTTP#v0.2.2" "--production" "--save"
+44 error node v6.11.2
+45 error npm  v3.10.10
+46 error code EISDIR
+47 error errno -4068
+48 error syscall read
+49 error eisdir EISDIR: illegal operation on a directory, read
+50 error eisdir This is most likely not a problem with npm itself
+50 error eisdir and is related to npm not being able to find a package.json in
+50 error eisdir a package you are trying to install.
+51 verbose exit [ -4068, true ]

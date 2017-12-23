@@ -1,0 +1,174 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Accelerometer\"><param name=\"android-package\" value=\"org.apache.cordova.devicemotion.AccelListener\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CDVOrientation\"><param name=\"android-package\" value=\"cordova.plugins.screenorientation.CDVOrientation\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"ChromeSocketsTcp\"><param name=\"android-package\" value=\"org.chromium.ChromeSocketsTcp\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeSocketsTcpServer\"><param name=\"android-package\" value=\"org.chromium.ChromeSocketsTcpServer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeSocketsUdp\"><param name=\"android-package\" value=\"org.chromium.ChromeSocketsUdp\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeSystemNetwork\"><param name=\"android-package\" value=\"org.chromium.ChromeSystemNetwork\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-chrome-apps-common": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-chrome-apps-sockets-tcp": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-chrome-apps-sockets-tcpserver": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-chrome-apps-sockets-udp": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-chrome-apps-system-network": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "cordova-plugin-chrome-apps-common.events",
+            "file": "plugins/cordova-plugin-chrome-apps-common/events.js",
+            "pluginId": "cordova-plugin-chrome-apps-common",
+            "clobbers": [
+                "chrome.Event"
+            ]
+        },
+        {
+            "id": "cordova-plugin-chrome-apps-common.errors",
+            "file": "plugins/cordova-plugin-chrome-apps-common/errors.js",
+            "pluginId": "cordova-plugin-chrome-apps-common"
+        },
+        {
+            "id": "cordova-plugin-chrome-apps-common.stubs",
+            "file": "plugins/cordova-plugin-chrome-apps-common/stubs.js",
+            "pluginId": "cordova-plugin-chrome-apps-common"
+        },
+        {
+            "id": "cordova-plugin-chrome-apps-common.helpers",
+            "file": "plugins/cordova-plugin-chrome-apps-common/helpers.js",
+            "pluginId": "cordova-plugin-chrome-apps-common"
+        },
+        {
+            "id": "cordova-plugin-chrome-apps-sockets-tcp.sockets.tcp",
+            "file": "plugins/cordova-plugin-chrome-apps-sockets-tcp/sockets.tcp.js",
+            "pluginId": "cordova-plugin-chrome-apps-sockets-tcp",
+            "clobbers": [
+                "chrome.sockets.tcp"
+            ]
+        },
+        {
+            "id": "cordova-plugin-chrome-apps-sockets-tcpserver.sockets.tcpServer",
+            "file": "plugins/cordova-plugin-chrome-apps-sockets-tcpserver/sockets.tcpServer.js",
+            "pluginId": "cordova-plugin-chrome-apps-sockets-tcpserver",
+            "clobbers": [
+                "chrome.sockets.tcpServer"
+            ]
+        },
+        {
+            "id": "cordova-plugin-chrome-apps-sockets-udp.sockets.udp",
+            "file": "plugins/cordova-plugin-chrome-apps-sockets-udp/sockets.udp.js",
+            "pluginId": "cordova-plugin-chrome-apps-sockets-udp",
+            "clobbers": [
+                "chrome.sockets.udp"
+            ]
+        },
+        {
+            "id": "cordova-plugin-chrome-apps-system-network.system.network",
+            "file": "plugins/cordova-plugin-chrome-apps-system-network/system.network.js",
+            "pluginId": "cordova-plugin-chrome-apps-system-network",
+            "clobbers": [
+                "chrome.system.network"
+            ]
+        },
+        {
+            "id": "cordova-plugin-device-motion.Acceleration",
+            "file": "plugins/cordova-plugin-device-motion/www/Acceleration.js",
+            "pluginId": "cordova-plugin-device-motion",
+            "clobbers": [
+                "Acceleration"
+            ]
+        },
+        {
+            "id": "cordova-plugin-device-motion.accelerometer",
+            "file": "plugins/cordova-plugin-device-motion/www/accelerometer.js",
+            "pluginId": "cordova-plugin-device-motion",
+            "clobbers": [
+                "navigator.accelerometer"
+            ]
+        },
+        {
+            "id": "es6-promise-plugin.Promise",
+            "file": "plugins/es6-promise-plugin/www/promise.js",
+            "pluginId": "es6-promise-plugin",
+            "runs": true
+        },
+        {
+            "id": "cordova-plugin-screen-orientation.screenorientation",
+            "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
+            "pluginId": "cordova-plugin-screen-orientation",
+            "clobbers": [
+                "cordova.plugins.screenorientation"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.3",
+        "cordova-plugin-chrome-apps-common": "1.0.7",
+        "cordova-plugin-chrome-apps-sockets-tcp": "1.3.7",
+        "cordova-plugin-chrome-apps-sockets-tcpserver": "1.2.4",
+        "cordova-plugin-chrome-apps-sockets-udp": "1.3.0",
+        "cordova-plugin-chrome-apps-system-network": "1.1.2",
+        "cordova-plugin-device-motion": "1.2.5",
+        "es6-promise-plugin": "4.1.0",
+        "cordova-plugin-screen-orientation": "2.0.2"
+    }
+}

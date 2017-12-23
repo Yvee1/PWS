@@ -1,0 +1,114 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-chrome-apps-sockets-tcpserver",
+        "scope": null,
+        "escapedName": "cordova-plugin-chrome-apps-sockets-tcpserver",
+        "name": "cordova-plugin-chrome-apps-sockets-tcpserver",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\Kippen\\Desktop\\Coderen\\GitHub\\PWS\\Custom evothings viewer\\evothings-viewer"
+    ]
+  ],
+  "_from": "cordova-plugin-chrome-apps-sockets-tcpserver@latest",
+  "_id": "cordova-plugin-chrome-apps-sockets-tcpserver@1.2.4",
+  "_inCache": true,
+  "_location": "/cordova-plugin-chrome-apps-sockets-tcpserver",
+  "_nodeVersion": "0.10.29",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-chrome-apps-sockets-tcpserver-1.2.4.tgz_1481312775483_0.23319713631644845"
+  },
+  "_npmUser": {
+    "name": "agrieve",
+    "email": "agrieve@chromium.org"
+  },
+  "_npmVersion": "3.3.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-chrome-apps-sockets-tcpserver",
+    "scope": null,
+    "escapedName": "cordova-plugin-chrome-apps-sockets-tcpserver",
+    "name": "cordova-plugin-chrome-apps-sockets-tcpserver",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-chrome-apps-sockets-tcpserver/-/cordova-plugin-chrome-apps-sockets-tcpserver-1.2.4.tgz",
+  "_shasum": "29d34bfbf0826ebd2812c35c8e925dd58e0cd8ea",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-chrome-apps-sockets-tcpserver",
+  "_where": "C:\\Users\\Kippen\\Desktop\\Coderen\\GitHub\\PWS\\Custom evothings viewer\\evothings-viewer",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-sockets-tcpServer/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-chrome-apps-sockets-tcpserver",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "This plugin provides TCP server sockets for Android and iOS.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "29d34bfbf0826ebd2812c35c8e925dd58e0cd8ea",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-chrome-apps-sockets-tcpserver/-/cordova-plugin-chrome-apps-sockets-tcpserver-1.2.4.tgz"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "gitHead": "5fd947e76fa5319a84f528f26e3908a761033803",
+  "homepage": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-sockets-tcpServer",
+  "keywords": [
+    "chrome",
+    "socket",
+    "sockets",
+    "tcp",
+    "server",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "BSD",
+  "maintainers": [
+    {
+      "name": "agrieve",
+      "email": "agrieve@chromium.org"
+    },
+    {
+      "name": "mmocny",
+      "email": "mmocny@gmail.com"
+    },
+    {
+      "name": "maxw",
+      "email": "maxw@chromium.org"
+    },
+    {
+      "name": "clelland",
+      "email": "iclelland@google.com"
+    }
+  ],
+  "name": "cordova-plugin-chrome-apps-sockets-tcpserver",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-sockets-tcpServer.git"
+  },
+  "scripts": {},
+  "version": "1.2.4"
+}

@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-chrome-apps-common": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-chrome-apps-sockets-tcp": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-chrome-apps-sockets-tcpserver": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-chrome-apps-sockets-udp": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-chrome-apps-system-network": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        }
+    },
+    "dependent_plugins": {
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "com.evothings.demoapp"
+        }
+    }
+}
