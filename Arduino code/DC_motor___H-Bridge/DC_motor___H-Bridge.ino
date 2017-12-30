@@ -1,8 +1,4 @@
-/*
-Adafruit Arduino - Lesson 15. Bi-directional Motor
-*/
- 
-int enablePin = 5;
+int enablePin = 11;
 int in1Pin = 10;
 int in2Pin = 9;
 int switchPin = 7;
@@ -10,82 +6,83 @@ int potPin = 0;
 int speed = 0;
 boolean reverse;
 
+// Declareer een array van integers met 2 plekken
 int serialInArray[2];
+// Declareer een integer om
 int serialCount = 0;
+
 boolean firstContact = false;
 
 void setup()
 {
+  // Start Serial op 9600 baud
   Serial.begin(9600);
+
+  // Pins instellen
   pinMode(in1Pin, OUTPUT);
   pinMode(in2Pin, OUTPUT);
   pinMode(enablePin, OUTPUT);
   pinMode(switchPin, INPUT_PULLUP);
 
   while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB
+    ; // Wacht totdat er Serial communicatie werkt bij Arduino
   }
   
 }
  
 void loop()
 {
-  //int speed = analogRead(potPin) / 4;
   setMotor(speed, reverse);
 }
 
 void serialEvent() {
+  // Wanneer er een byte 'in de wachtrij staat'
   while (Serial.available()>0) {
-    // read a byte from the serial port:
+    // Sla de byte op in de variabele inByte
     int inByte = Serial.read();
     
-//    Serial.print("Received: ");
-//    Serial.println(inByte);
-    // if this is the first byte received, and it's an A,
-    // clear the serial buffer and note that you've
-    // had first contact from the microcontroller.
-    // Otherwise, add the incoming byte to the array:
+    // Voor testen
+    //Serial.print("Received: ");
+    //Serial.println(inByte);
+    
+    // Als er nog geen contact is gemaakt
     if (firstContact == false) {
+      // Kijk of het bericht een A is
       if (inByte == 'A') {
-        //clear the serial port buffer
-        firstContact = true;     // you've had first contact from the microcontroller
-        Serial.write('A');       // ask for more
+        firstContact = true;
+        // Vraag gegevens door iets terug te sturen
+        Serial.write('A');
       }
     }
+
+    // Als er al wel contact was gemaakt
     else {
-      // Add the latest byte from the serial port to array:
-//      Serial.write(inByte);
+      // Zet de byte op de goede plaats in de array
       serialInArray[serialCount] = inByte;
-//      Serial.print("serialInArray: ");
-//      Serial.write(serialInArray[0]);
-//      Serial.write(serialInArray[1]);
-//      Serial.println(serialCount);
+      // Zet de counter voor de plaats van de byte 1 omhoog
       serialCount++;
       
   
-      // If we have 2 bytes:
+      // Als we 2 bytes hebben ontvangen en opgeslagen hebben
       if (serialCount > 1 ) {
         
+        // Zet de snelheid gelijk aan de eerste waarde van de array
         speed = serialInArray[0];
-        Serial.write(serialInArray[1]);
+        
+        // Als de waarde een 1 is, zet de motor in de achteruit
         if (serialInArray[1] == 1){
           reverse = true;
         }
+
+        // Anders niet
         else{
           reverse = false;
         }
   
-        // print the values (for debugging purposes only):
-//        if (reverse){
-//          Serial.println("true");
-//        }
-//        else{
-//          Serial.println("true");
-//        }
-  
-        // Send a capital A to request new sensor readings:
+        // Stuur A om voor meer gegevens te vragen
         Serial.write('A');
-        // Reset serialCount:
+        
+        // Zet de counter weer op 0
         serialCount = 0;
     }
    }
