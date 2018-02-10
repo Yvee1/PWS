@@ -18,15 +18,15 @@ int enablePin2 = 5;
 int in4Pin2 = 4;
 int in3Pin2 = 7;
 
-int speedR = 255;
-int speedL = 255;
+int speedR = 200;
+int speedL = 200;
 boolean on = false;
 boolean reverseR = false;
 boolean reverseL = false;
 
 int distance = 0;
 
-SoftwareSerial ESPserial(2, 3); // RX | TX
+SoftwareSerial ESPserial(13, 10); // RX | TX
 
 void setup()
 {
@@ -87,7 +87,7 @@ void loop()
     Serial.println(distance);
   }
  
-  if (on && (distance > 10 || distance == 0)){
+  if (on && (distance > 20 || distance == 0)){
     setMotorR(speedR, reverseR);
     setMotorL(speedL, reverseL);
   }
