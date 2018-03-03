@@ -18,8 +18,8 @@ int enablePin2 = 5;
 int in4Pin2 = 4;
 int in3Pin2 = 7;
 
-int speedR = 200;
-int speedL = 200;
+int speedR = 255;
+int speedL = 255;
 boolean on = false;
 boolean reverseR = false;
 boolean reverseL = false;
